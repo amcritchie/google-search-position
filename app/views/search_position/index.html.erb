@@ -1,5 +1,7 @@
 <h1>Results for Cyvasse!</h1>
 
 <ul class="list-group">
-
+  <%= @search.each do |result| %>
+      <li class="list-group-item"><%= result.uri %></li>
+  <% end %>
 </ul>

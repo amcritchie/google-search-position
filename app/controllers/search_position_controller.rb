@@ -4,6 +4,6 @@ class SearchPositionController < ApplicationController
   protect_from_forgery with: :exception
 
   def index
-    # @search = Google::Search::Web.new(:query => 'cyvasse')
+    @search = Google::Search::Web.new(:query => 'cyvasse')
   end
 end
