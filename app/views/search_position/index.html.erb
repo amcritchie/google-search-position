@@ -43,7 +43,7 @@
               <li class="list-group-item
                 <% if index + 1 == @url_position %> target-search
                 <% end %>
-              "><%= result.uri %></li>
+              "><a href="<%= result.uri %>"><%= result.uri %></a></li>
           <% end %>
         </ul>
         <br><br>
