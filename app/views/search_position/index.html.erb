@@ -22,12 +22,14 @@
         <th class="col-md-8 text-center">Position in google search</th>
       </tr>
       </thead>
-      <tbody>
-      <tr>
-        <td><%= params[:url] %></td>
-        <td><%= @url_position %></td>
-      </tr>
-      </tbody>
+      <% if !@results.nil? %>
+          <tbody>
+          <tr>
+            <td><%= params[:url] %></td>
+            <td><%= @url_position %></td>
+          </tr>
+          </tbody>
+      <% end %>
     </table>
   </div>
 
@@ -39,7 +41,8 @@
         <ul class="list-group">
           <% @results.each_with_index do |result, index| %>
               <li class="list-group-item
-                <% if index == @url_position - 1 %> target-search <% end %>
+                <% if index == @url_position - 1 %> target-search
+                <% end %>
               "><%= result.uri %></li>
           <% end %>
         </ul>
