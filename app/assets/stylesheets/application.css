@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.target-search{
+    background-color: #B0D7FF;
+}

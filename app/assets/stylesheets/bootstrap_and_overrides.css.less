@@ -1,4 +1,12 @@
+// Links
+@linkColor:         #EAE8FF;
+@linkColorHover:    darken(@linkColor, 15);
+
 @import "twitter/bootstrap/bootstrap";
+
+// Links
+@linkColor:         #EAE8FF;
+@linkColorHover:    darken(@linkColor, 15);
 
 // Set the correct sprite paths
 @iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
@@ -27,3 +35,30 @@
 //
 // Example:
 // @link-color: #ff0000;
+
+@one: #EAE8FF;
+@two: #D8D5DB;
+@three: #ADACB5;
+@dark: #2D3142;
+@blue: #B0D7FF;
+
+@table-bg-hover: @three;
+
+@body-bg: @two;
+@text-color: @dark;
+@link-color: @blue;
+@link-hover-color: @three;
+
+@nav-light: @blue;
+@nav-off-light: darken(@nav-light, 10%);
+@nav-dark: black;
+@nav-off-dark: lighten(@nav-dark, 30%);
+
+@navbar-default-color: @nav-light;
+@navbar-default-bg: @nav-dark;
+@navbar-default-link-color: @nav-light;
+@navbar-default-link-hover-color: @nav-off-light;
+@navbar-default-brand-hover-color: @nav-off-light;
+@navbar-default-toggle-hover-bg: @nav-off-dark;
+@navbar-default-toggle-icon-bar-bg: @nav-off-light;
+@navbar-default-toggle-border-color: @nav-off-light;
