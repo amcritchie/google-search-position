@@ -41,7 +41,7 @@
         <ul class="list-group">
           <% @results.each_with_index do |result, index| %>
               <li class="list-group-item
-                <% if index == @url_position - 1 %> target-search
+                <% if index + 1 == @url_position %> target-search
                 <% end %>
               "><%= result.uri %></li>
           <% end %>
